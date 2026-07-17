@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Projet vidéo — Corentin Boullard." />
+    <title>Projet — Corentin Boullard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script>if (window.location.protocol === 'file:') document.documentElement.classList.add('is-file-preview');</script>
+  </head>
+  <body class="project-page" data-page="project">
+    <div class="grain" aria-hidden="true"></div>
+    <aside class="local-file-notice" aria-label="Lecture des vidéos" data-i18n-aria="localFile.aria">
+      <span data-i18n="localFile.lead">Pour lire les films :</span>
+      <a href="http://localhost:4173/"><span data-i18n="localFile.link">ouvrir le portfolio via localhost</span> <i aria-hidden="true">↗</i></a>
+    </aside>
+
+    <header class="site-header project-header">
+      <div class="language-switch" role="group" aria-label="Choisir la langue" data-i18n-aria="language.aria">
+        <button type="button" data-language="en" aria-pressed="false">EN</button><span aria-hidden="true">/</span><button type="button" data-language="fr" aria-pressed="true">FR</button>
+      </div>
+      <a class="wordmark" href="index.html" aria-label="Retour à l'accueil" data-i18n-aria="navigation.backHome">Corentin Boullard</a>
+      <nav aria-label="Navigation principale" data-i18n-aria="navigation.aria">
+        <a href="index.html#work" data-i18n="nav.work">Projets</a>
+        <a href="index.html#about" data-i18n="nav.about">À propos</a>
+        <a href="index.html#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="project-detail" id="top">
+      <section class="detail-film" aria-label="Film du projet" data-i18n-aria="project.filmAria">
+        <div class="detail-film-frame" id="detail-film-frame">
+          <iframe id="detail-film" title="Film du projet" data-i18n-title="project.filmAria" allow="autoplay; encrypted-media; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </section>
+
+      <section class="detail-intro section" aria-labelledby="project-title">
+        <p class="eyebrow" id="project-client">Client</p>
+        <h1 id="project-title" hidden></h1>
+        <p class="detail-description" id="project-description"></p>
+      </section>
+
+      <section class="detail-information section" aria-labelledby="info-title">
+        <p class="eyebrow" id="info-title" data-i18n="project.info">Infos</p>
+        <dl class="detail-meta-list">
+          <div>
+            <dt data-i18n="project.client">Client</dt>
+            <dd id="detail-client"></dd>
+          </div>
+          <div id="detail-project-row">
+            <dt data-i18n="project.project">Projet</dt>
+            <dd id="detail-project"></dd>
+          </div>
+          <div class="detail-meta-wide">
+            <dt data-i18n="project.format">Format</dt>
+            <dd id="detail-format"></dd>
+          </div>
+          <div class="detail-meta-wide">
+            <dt data-i18n="project.directors">Réalisateurs</dt>
+            <dd id="detail-directors"></dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="detail-links section" aria-label="Liens du projet" data-i18n-aria="project.linksAria">
+        <a class="detail-youtube" id="detail-youtube" href="#" target="_blank" rel="noreferrer"><span data-i18n="project.fullFilm">Voir le film complet</span> <span aria-hidden="true">↗</span></a>
+        <a class="detail-next" id="detail-next" href="#"><span id="detail-next-label">Projet suivant</span> <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Corentin Boullard</p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram <span aria-hidden="true">↗</span></a>
+        <a href="https://vimeo.com/" target="_blank" rel="noreferrer">Vimeo <span aria-hidden="true">↗</span></a>
+      </div>
+    </footer>
+
+    <script src="youtube-segment-loop.js"></script>
+    <script src="language.js"></script>
+    <script src="project.js"></script>
+  </body>
+</html>
