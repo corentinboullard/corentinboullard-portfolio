@@ -96,7 +96,7 @@ h2 { font-size: clamp(2.5rem, 5.6vw, 6.6rem); line-height: .93; letter-spacing: 
 .intro-name span { display: inline; }
 .intro-statement { max-width: 42ch; margin: 0 auto; color: var(--ink); font-family: var(--display); font-size: clamp(1rem, 1.55vw, 1.45rem); line-height: .98; letter-spacing: -.075em; text-align: center; }
 .work { padding: 0; }
-.work-heading { padding: .95rem var(--side); border-bottom: 1px solid var(--line); color: var(--ink); font-family: var(--display); font-size: clamp(1rem, 1.6vw, 1.35rem); line-height: 1; letter-spacing: -.06em; }
+.work-heading { padding: .95rem var(--side); border-bottom: 1px solid var(--line); color: var(--ink); font-family: var(--display); font-size: clamp(1rem, 1.6vw, 1.35rem); line-height: 1; letter-spacing: -.06em; text-align: center; }
 
 .projects {
   display: grid;
@@ -200,7 +200,7 @@ h2 { font-size: clamp(2.5rem, 5.6vw, 6.6rem); line-height: .93; letter-spacing: 
   .site-header { justify-content: center; min-height: 5.75rem; padding-top: .9rem; padding-bottom: .85rem; }
   .language-switch { top: 1.05rem; left: var(--side); }
   .wordmark { top: .86rem; left: 50%; transform: translateX(-50%); }
-  .site-header nav { right: var(--side); bottom: .82rem; gap: 1rem; font-size: .62rem; }
+  .site-header nav { right: auto; bottom: .82rem; left: 50%; gap: 1rem; font-size: .62rem; transform: translateX(-50%); white-space: nowrap; }
   .portfolio-intro { min-height: 92svh; padding-top: 7rem; padding-bottom: 2.2rem; }
   .intro-name { font-size: clamp(3.35rem, 16vw, 5.25rem); line-height: .82; letter-spacing: -.11em; }
   .intro-name span { display: block; }
@@ -218,6 +218,7 @@ h2 { font-size: clamp(2.5rem, 5.6vw, 6.6rem); line-height: .93; letter-spacing: 
   .detail-meta-list { grid-template-columns: 1fr; }
   .detail-meta-list div:nth-child(odd), .detail-meta-list div:nth-child(even) { padding-right: 0; padding-left: 0; border-left: 0; }
   .detail-links { display: grid; gap: 1.3rem; }
+  .contact-email { max-width: none; font-size: min(5vw, 1.55rem); letter-spacing: -.08em; overflow-wrap: normal; white-space: nowrap; }
 }
 
 @media (prefers-reduced-motion: reduce) {
