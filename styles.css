@@ -180,9 +180,7 @@ h2 { font-size: clamp(2.5rem, 5.6vw, 6.6rem); line-height: .93; letter-spacing: 
 .contact { padding-top: clamp(5rem, 10vw, 9rem); padding-bottom: clamp(7rem, 14vw, 12rem); border-top: 1px solid var(--line); }
 .contact .eyebrow { margin-bottom: clamp(2.2rem, 5vw, 4.5rem); }
 .contact-email { display: inline-block; max-width: 100%; border-bottom: 1px solid var(--ink); font-size: clamp(2.2rem, 6.5vw, 8.5rem); line-height: .95; letter-spacing: -.075em; overflow-wrap: anywhere; transition: color .3s ease, border-color .3s ease; }
-.contact-email span { display: inline-block; font-size: .55em; vertical-align: .25em; letter-spacing: 0; transition: transform .35s var(--ease); }
 .contact-email:hover { color: var(--muted); border-color: var(--muted); }
-.contact-email:hover span { transform: translate(.18em, -.18em); }
 .contact-instagram { display: flex; width: fit-content; align-items: baseline; gap: .5em; margin-top: clamp(1.25rem, 2.5vw, 2.2rem); color: var(--muted); font: 400 clamp(.9rem, 1.35vw, 1.15rem)/1 var(--display); letter-spacing: -.06em; transition: color .25s ease; }
 .contact-instagram span { display: inline-block; font-family: "DM Mono", monospace; font-size: .8em; letter-spacing: 0; transition: transform .35s var(--ease); }
 .contact-instagram:hover { color: var(--ink); }
