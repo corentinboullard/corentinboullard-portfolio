@@ -139,10 +139,7 @@ h2 { font-size: clamp(2.5rem, 5.6vw, 6.6rem); line-height: .93; letter-spacing: 
 .project-caption { position: absolute; z-index: 2; right: 0; bottom: 0; left: 0; display: flex; justify-content: space-between; align-items: end; gap: 1rem; padding: .85rem 1rem; color: var(--ink); pointer-events: none; }
 .project-caption h3 { margin: 0; font: 500 .68rem/1.2 "DM Mono", monospace; letter-spacing: .02em; text-transform: uppercase; text-align: right; }
 .project-caption p { flex: 0 1 auto; margin: 0; color: var(--ink); font: 500 .68rem/1.2 "DM Mono", monospace; letter-spacing: .02em; text-transform: uppercase; }
-.project-link { position: absolute; z-index: 1; inset: 0; display: grid; place-items: center; color: var(--ink); cursor: pointer; }
-.project-link > span { padding: .55rem .7rem; border: 1px solid rgba(244, 243, 239, .42); background: rgba(10, 10, 10, .32); font: 500 .64rem/1 "DM Mono", monospace; letter-spacing: .04em; opacity: 0; transform: translateY(.35rem); transition: opacity .25s ease, transform .25s var(--ease), background-color .25s ease; }
-.project-link i { font-style: normal; }
-.project:hover .project-link > span, .project:focus-within .project-link > span { opacity: 1; transform: translateY(0); }
+.project-link { position: absolute; z-index: 3; inset: 0; display: block; color: var(--ink); cursor: pointer; }
 .project-link:focus-visible { outline: 1px solid var(--ink); outline-offset: -5px; }
 
 .project-page .site-header { background: rgba(10, 10, 10, .98); }
@@ -210,7 +207,6 @@ h2 { font-size: clamp(2.5rem, 5.6vw, 6.6rem); line-height: .93; letter-spacing: 
   .about-note { margin-top: 2.8rem; }
   .site-footer { display: block; }
   .social-links { margin-top: 1.25rem; }
-  .project-link > span { opacity: 1; transform: none; }
   .project-detail { padding-top: 5.75rem; }
   .detail-film-frame { aspect-ratio: 4 / 3; }
   .detail-information { display: block; }

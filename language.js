@@ -15,7 +15,7 @@
         line2: 'Films, campagnes ads & histoires humaines.',
         line3: 'Disponible partout.',
       },
-      work: { heading: 'Derniers projets', ariaTitle: 'Corentin Boullard — derniers projets', viewProject: 'Voir le projet' },
+      work: { heading: 'Derniers projets', ariaTitle: 'Corentin Boullard — derniers projets' },
       about: {
         eyebrow: 'À propos',
         title: 'Je réalise des films et des campagnes ads centrés sur le mouvement, l’effort et les histoires humaines.',
@@ -56,7 +56,7 @@
         line2: 'Films, ad campaigns & human stories.',
         line3: 'Available worldwide.',
       },
-      work: { heading: 'Latest work', ariaTitle: 'Corentin Boullard — latest work', viewProject: 'View project' },
+      work: { heading: 'Latest work', ariaTitle: 'Corentin Boullard — latest work' },
       about: {
         eyebrow: 'About',
         title: 'I direct films and ad campaigns centered on movement, effort and human stories.',
